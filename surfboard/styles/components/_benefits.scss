@@ -1,0 +1,33 @@
+
+.benefits__list {
+    display: flex;
+    margin-top: rem(49px);
+    justify-content: center;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+    
+
+    &:before {
+        content: url("../../img/benefit/shape.png");
+        position: absolute;
+        top: rem(30px);
+        right: rem(-30px);
+        transform: translateХ(50%);
+    }
+
+    &:first-child {
+        padding-left: rem(67px);
+    }
+
+    &:last-child {
+        padding-right: rem(67px);
+
+        &::before{
+            display: none;
+        }
+    }
+}
